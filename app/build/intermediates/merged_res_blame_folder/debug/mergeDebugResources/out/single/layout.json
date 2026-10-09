@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_trip_complete.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_trip_complete.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_live_trip.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_live_trip.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/item_place.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/item_place.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_splash.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_driver_assigned.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_driver_assigned.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_login.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_finding_driver.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_finding_driver.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_otp.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_otp.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_fare_quote.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_fare_quote.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_search.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_search.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-mergeDebugResources-34:/layout/activity_home.xml",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_home.xml"
+    }
+]

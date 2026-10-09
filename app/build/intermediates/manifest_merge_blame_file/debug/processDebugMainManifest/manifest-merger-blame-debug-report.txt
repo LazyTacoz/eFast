@@ -1,0 +1,268 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.efast.passenger"
+4    android:versionCode="1"
+5    android:versionName="1.0-demo" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="26"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:5:22-78
+13
+14    <!-- Include required permissions for Google Maps API to run. -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:20:5-78
+15-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:20:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:21:5-66
+16-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:21:22-64
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:22:5-24:33
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:23:8-40
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:24:8-31
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:27:5-30:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:29:7-61
+25-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:29:16-59
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.efast.passenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.efast.passenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:7:5-76:19
+35        android:allowBackup="true"
+35-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:8:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.16.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\f36dddea70ae9912d5e0ac8ae86304d5\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+38-->INJECTED
+39        android:label="@string/app_name"
+39-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:9:9-41
+40        android:supportsRtl="true"
+40-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:10:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.Efast" >
+42-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:11:9-43
+43
+44        <!-- Google Maps API key (set MAPS_API_KEY in local.properties) -->
+45        <meta-data
+45-->INJECTED
+46            android:name="com.google.android.geo.API_KEY"
+46-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:15:13-58
+47            android:value="" />
+47-->INJECTED
+48
+49        <activity
+49-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:18:9-26:20
+50            android:name="com.efast.passenger.ui.SplashActivity"
+50-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:19:13-46
+51            android:exported="true"
+51-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:20:13-36
+52            android:screenOrientation="portrait" >
+52-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:21:13-49
+53            <intent-filter>
+53-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:22:13-25:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:23:17-69
+54-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:23:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:24:17-77
+56-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:24:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:28:9-32:58
+60            android:name="com.efast.passenger.ui.LoginActivity"
+60-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:29:13-45
+61            android:exported="false"
+61-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:30:13-37
+62            android:screenOrientation="portrait"
+62-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:31:13-49
+63            android:windowSoftInputMode="adjustResize" />
+63-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:32:13-55
+64        <activity
+64-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:34:9-38:58
+65            android:name="com.efast.passenger.ui.OtpActivity"
+65-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:35:13-43
+66            android:exported="false"
+66-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:36:13-37
+67            android:screenOrientation="portrait"
+67-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:37:13-49
+68            android:windowSoftInputMode="adjustResize" />
+68-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:38:13-55
+69        <activity
+69-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:40:9-43:52
+70            android:name="com.efast.passenger.ui.HomeActivity"
+70-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:41:13-44
+71            android:exported="false"
+71-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:42:13-37
+72            android:screenOrientation="portrait" />
+72-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:43:13-49
+73        <activity
+73-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:45:9-49:58
+74            android:name="com.efast.passenger.ui.SearchActivity"
+74-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:46:13-46
+75            android:exported="false"
+75-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:47:13-37
+76            android:screenOrientation="portrait"
+76-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:48:13-49
+77            android:windowSoftInputMode="adjustResize" />
+77-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:49:13-55
+78        <activity
+78-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:51:9-54:52
+79            android:name="com.efast.passenger.ui.FareQuoteActivity"
+79-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:52:13-49
+80            android:exported="false"
+80-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:53:13-37
+81            android:screenOrientation="portrait" />
+81-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:54:13-49
+82        <activity
+82-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:56:9-59:52
+83            android:name="com.efast.passenger.ui.FindingDriverActivity"
+83-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:57:13-53
+84            android:exported="false"
+84-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:58:13-37
+85            android:screenOrientation="portrait" />
+85-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:59:13-49
+86        <activity
+86-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:61:9-64:52
+87            android:name="com.efast.passenger.ui.DriverAssignedActivity"
+87-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:62:13-54
+88            android:exported="false"
+88-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:63:13-37
+89            android:screenOrientation="portrait" />
+89-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:64:13-49
+90        <activity
+90-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:66:9-69:52
+91            android:name="com.efast.passenger.ui.LiveTripActivity"
+91-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:67:13-48
+92            android:exported="false"
+92-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:68:13-37
+93            android:screenOrientation="portrait" />
+93-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:69:13-49
+94        <activity
+94-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:71:9-74:52
+95            android:name="com.efast.passenger.ui.TripCompleteActivity"
+95-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:72:13-52
+96            android:exported="false"
+96-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:73:13-37
+97            android:screenOrientation="portrait" />
+97-->C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\AndroidManifest.xml:74:13-49
+98
+99        <provider
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+100            android:name="androidx.startup.InitializationProvider"
+100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+101            android:authorities="com.efast.passenger.androidx-startup"
+101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+102            android:exported="false" >
+102-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+103            <meta-data
+103-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+104-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+105                android:value="androidx.startup" />
+105-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\22042544d352a65a82d3568cd65a0300\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\nachi\.gradle\caches\9.6.0\transforms\12b30f5670e59c73865287f2515884eb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+107-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\nachi\.gradle\caches\9.6.0\transforms\12b30f5670e59c73865287f2515884eb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+108                android:value="androidx.startup" />
+108-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\nachi\.gradle\caches\9.6.0\transforms\12b30f5670e59c73865287f2515884eb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+111                android:value="androidx.startup" />
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+112        </provider> <!-- Needs to be explicitly declared on P+ -->
+113        <uses-library
+113-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:33:7-86
+114            android:name="org.apache.http.legacy"
+114-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:33:21-58
+115            android:required="false" />
+115-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\48266dc56c4295b13c478ab0bdca7aef\transformed\play-services-maps-19.2.0\AndroidManifest.xml:33:59-83
+116
+117        <activity
+117-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\833d435dd58d12c721cc1b7df23108f6\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+118            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+118-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\833d435dd58d12c721cc1b7df23108f6\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+119            android:exported="false"
+119-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\833d435dd58d12c721cc1b7df23108f6\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+120-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\833d435dd58d12c721cc1b7df23108f6\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+121
+122        <meta-data
+122-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\1157538596700f449d7d007db7599202\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+123            android:name="com.google.android.gms.version"
+123-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\1157538596700f449d7d007db7599202\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+124            android:value="@integer/google_play_services_version" />
+124-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\1157538596700f449d7d007db7599202\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+125
+126        <receiver
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+127            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+128            android:directBootAware="false"
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+129            android:enabled="true"
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+130            android:exported="true"
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+131            android:permission="android.permission.DUMP" >
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+133                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+134            </intent-filter>
+135            <intent-filter>
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+136                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+137            </intent-filter>
+138            <intent-filter>
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+139                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+140            </intent-filter>
+141            <intent-filter>
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+142                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+142-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+142-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\nachi\.gradle\caches\9.6.0\transforms\ac9e6fcfb68a4a17d84f2b6d55fd9db8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+143            </intent-filter>
+144        </receiver>
+145    </application>
+146
+147</manifest>

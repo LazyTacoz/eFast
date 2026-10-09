@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.efast.passenger.app-mergeDebugResources-33:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\nachi\\.gradle\\caches\\9.6.0\\transforms\\163fc230acc6595fc52bff01256ece00\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

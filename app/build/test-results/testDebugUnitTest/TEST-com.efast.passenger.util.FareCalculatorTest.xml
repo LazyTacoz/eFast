@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.efast.passenger.util.FareCalculatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-03T01:49:29.848Z" hostname="NACHIE" time="0.013">
+  <properties/>
+  <testcase name="km_format" classname="com.efast.passenger.util.FareCalculatorTest" time="0.004"/>
+  <testcase name="zeroDistance" classname="com.efast.passenger.util.FareCalculatorTest" time="0.001"/>
+  <testcase name="specExample_11250m" classname="com.efast.passenger.util.FareCalculatorTest" time="0.0"/>
+  <testcase name="rupees_format" classname="com.efast.passenger.util.FareCalculatorTest" time="0.001"/>
+  <testcase name="roundHalfUp_aboveHalf" classname="com.efast.passenger.util.FareCalculatorTest" time="0.0"/>
+  <testcase name="roundHalfUp_belowHalf" classname="com.efast.passenger.util.FareCalculatorTest" time="0.0"/>
+  <testcase name="oneKm" classname="com.efast.passenger.util.FareCalculatorTest" time="0.0"/>
+  <testcase name="roundHalfUp_exactHalf" classname="com.efast.passenger.util.FareCalculatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

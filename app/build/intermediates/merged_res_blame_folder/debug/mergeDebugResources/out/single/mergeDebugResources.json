@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_trip_complete.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_trip_complete.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_search.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_search.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_live_trip.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_live_trip.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_login.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_finding_driver.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_finding_driver.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_driver_assigned.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_driver_assigned.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_otp.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_otp.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_fare_quote.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_fare_quote.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_splash.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_item_place.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/item_place.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/drawable_gradient_map_fade.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/drawable/gradient_map_fade.xml"
+    },
+    {
+        "merged": "com.efast.passenger.app-debug-35:/layout_activity_home.xml.flat",
+        "source": "com.efast.passenger.app-main-37:/layout/activity_home.xml"
+    }
+]

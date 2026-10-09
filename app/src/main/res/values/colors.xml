@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EFast brand. Swap these hex values if you have official brand colours. -->
+    <color name="efast_green">#00B074</color>
+    <color name="efast_green_dark">#00875A</color>
+    <color name="efast_green_light">#D9F5EA</color>
+    <color name="efast_ink">#0E1B17</color>
+    <color name="efast_muted">#5E6B66</color>
+    <color name="efast_surface">#F4F7F5</color>
+    <color name="efast_outline">#D5DEDA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

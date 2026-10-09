@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light-only theme for the demo. Delete res/values-night/themes.xml so dark mode doesn't override it. -->
+    <style name="Base.Theme.Efast" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/efast_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/efast_green_light</item>
+        <item name="colorOnPrimaryContainer">@color/efast_ink</item>
+        <item name="colorSecondary">@color/efast_ink</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOutline">@color/efast_outline</item>
+        <item name="android:colorBackground">@color/efast_surface</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/efast_ink</item>
+    </style>
+
+    <style name="Theme.Efast" parent="Base.Theme.Efast" />
+</resources>

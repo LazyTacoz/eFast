@@ -1,0 +1,8 @@
+com.efast.passenger.app-pngs-0 C:\Users\nachi\Downloads\efast-passenger-day1\app\build\generated\res\pngs\debug
+com.efast.passenger.app-updated_navigation_xml-1 C:\Users\nachi\Downloads\efast-passenger-day1\app\build\generated\updated_navigation_xml\debug
+com.efast.passenger.app-packageDebugResources-2 C:\Users\nachi\Downloads\efast-passenger-day1\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.efast.passenger.app-packageDebugResources-3 C:\Users\nachi\Downloads\efast-passenger-day1\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.efast.passenger.app-debug-4 C:\Users\nachi\Downloads\efast-passenger-day1\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.efast.passenger.app-debug-5 C:\Users\nachi\Downloads\efast-passenger-day1\app\src\debug\res
+com.efast.passenger.app-main-6 C:\Users\nachi\Downloads\efast-passenger-day1\app\src\main\res
+gradleHome-0 C:\Users\nachi\.gradle

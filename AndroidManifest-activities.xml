@@ -1,0 +1,27 @@
+<!--
+  In app/src/main/AndroidManifest.xml, INSIDE <application ...>:
+  1. Delete the existing <activity android:name=".MainActivity" ...> block.
+  2. Paste these four blocks in its place. Leave everything else in the file as it is.
+-->
+<activity
+    android:name=".ui.SplashActivity"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+
+<activity
+    android:name=".ui.LoginActivity"
+    android:exported="false"
+    android:windowSoftInputMode="adjustResize" />
+
+<activity
+    android:name=".ui.OtpActivity"
+    android:exported="false"
+    android:windowSoftInputMode="adjustResize" />
+
+<activity
+    android:name=".ui.HomeActivity"
+    android:exported="false" />
