@@ -123,6 +123,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
+
+            <!-- Demo only: the driver side lives in the same app until it gets its own -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/driverDemoButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/action_driver_demo" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

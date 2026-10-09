@@ -81,4 +81,66 @@
     <string name="rate_your_driver">Rate your driver</string>
     <string name="action_pay">Pay %1$s via UPI</string>
     <string name="toast_payment_success">Payment successful</string>
+    <!-- Home: entry to the driver demo -->
+    <string name="action_driver_demo">Driver? Try Home Ride (demo)</string>
+
+    <!-- Driver: Home Ride -->
+    <string name="home_ride_title">Home Ride</string>
+    <string name="home_ride_subtitle">Heading home after your shift? Get only rides that take you closer to home.</string>
+    <string name="home_ride_your_home">Your home</string>
+    <string name="home_ride_home_not_set">Not set yet</string>
+    <string name="home_ride_home_area">%1$s area</string>
+    <string name="home_ride_changes_left">%1$d of %2$d home changes left this month</string>
+    <string name="home_ride_set_home">Set home</string>
+    <string name="home_ride_change_home">Change home</string>
+    <string name="home_ride_battery">Battery</string>
+    <string name="home_ride_battery_status">%1$d%% · %2$s range</string>
+    <string name="home_ride_demo_low_battery">Demo: low battery</string>
+    <string name="home_ride_window_label">How long can you look for a ride?</string>
+    <string name="home_ride_window_option">%1$d min</string>
+    <string name="home_ride_uses_left">%1$d of %2$d Home Rides left today</string>
+    <string name="home_ride_privacy_note">Your home address is stored encrypted on this phone. Riders never see it, and EFast staff only see the general area.</string>
+    <string name="home_ride_turn_on">Turn on Home Ride</string>
+    <string name="home_ride_need_home">Set your home first</string>
+    <string name="home_ride_no_uses_left">You\'ve used all %1$d Home Rides for today. Try again tomorrow.</string>
+
+    <!-- Driver: set home -->
+    <string name="home_address_title">Set your home</string>
+    <string name="home_address_subtitle">Pick your area, then add your street. Riders never see this.</string>
+    <string name="home_address_hint">Flat / building / street</string>
+    <string name="home_address_area_label">Area</string>
+    <string name="home_address_save">Save home</string>
+    <string name="home_address_error_line">Enter your street address</string>
+    <string name="home_address_error_area">Pick your area</string>
+    <string name="home_address_error_limit">You\'ve changed your home %1$d times this month. You can change it again next month.</string>
+    <string name="home_address_error_save">Couldn\'t save securely on this phone. Please try again.</string>
+    <string name="home_address_saved">Home saved</string>
+    <string name="home_address_first_save_free">Saving your home the first time doesn\'t count as a change.</string>
+
+    <!-- Driver: Home Ride active -->
+    <string name="home_ride_on_title">Home Ride is on</string>
+    <string name="home_ride_heading_to">Heading to %1$s area</string>
+    <string name="home_ride_time_left">%1$d min left</string>
+    <string name="home_ride_demo_clock">Demo: 1 second = 1 minute</string>
+    <string name="home_ride_looking">Looking for rides toward home…</string>
+    <string name="home_ride_no_more_requests">No more requests nearby right now. Keep heading home.</string>
+    <string name="home_ride_charge_needed">Not enough charge to get home safely. Charge at %1$s first: it adds only %2$s on your way.</string>
+    <string name="home_ride_charge_no_bay">Not enough charge to get home safely, and no free charging bay is in reach. Please call EFast support.</string>
+    <string name="home_ride_charge_done">Done charging (demo)</string>
+    <string name="home_ride_busy_zone">No match yet. %1$s (%2$s) is busy now and on your way home. Wait there for a ride.</string>
+    <string name="home_ride_offer_title">Ride toward home</string>
+    <string name="home_ride_offer_details">Drops you %1$s from home · pickup in %2$d min · %3$s</string>
+    <string name="home_ride_accept">Accept</string>
+    <string name="home_ride_skip">Skip</string>
+    <string name="home_ride_filtered_label">Filtered out for you</string>
+    <string name="home_ride_reason_direction">Doesn\'t take you closer to home</string>
+    <string name="home_ride_reason_detour">Too far out of your way (%1$s extra)</string>
+    <string name="home_ride_reason_rider_wait">Another driver can reach the rider sooner</string>
+    <string name="home_ride_reason_battery">Not enough charge to finish and get home</string>
+    <string name="home_ride_end">End Home Ride</string>
+    <string name="home_ride_accepted_title">Ride accepted (demo)</string>
+    <string name="home_ride_accepted_message">Pick up at %1$s in %2$d min. Home Ride ends after this drop-off.</string>
+    <string name="home_ride_expired_title">No ride toward home this time</string>
+    <string name="home_ride_expired_message">Your window ran out. Head home, there\'s no penalty.</string>
+    <string name="action_ok">OK</string>
 </resources>
