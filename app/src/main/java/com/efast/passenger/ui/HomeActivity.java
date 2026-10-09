@@ -63,6 +63,9 @@ public class HomeActivity extends AppCompatActivity {
             });
             binding.placesContainer.addView(row.getRoot());
         }
+
+        binding.driverDemoButton.setOnClickListener(v ->
+                startActivity(new Intent(this, DriverHomeRideActivity.class)));
     }
 
     private void setupHomeMap(GoogleMap map, Place pickup) {

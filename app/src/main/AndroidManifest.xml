@@ -73,6 +73,23 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
+        <!-- Driver side (demo): Home Ride -->
+        <activity
+            android:name=".ui.DriverHomeRideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.DriverHomeAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.HomeRideActiveActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
