@@ -63,6 +63,14 @@ public class HomeActivity extends AppCompatActivity {
             });
             binding.placesContainer.addView(row.getRoot());
         }
+
+        binding.myCo2Button.setOnClickListener(v ->
+                startActivity(EmissionsReportActivity.personal(this)));
+        binding.companyReportButton.setOnClickListener(v ->
+                startActivity(EmissionsReportActivity.company(this)));
+
+        binding.driverDemoButton.setOnClickListener(v ->
+                startActivity(new Intent(this, DriverHomeRideActivity.class)));
     }
 
     private void setupHomeMap(GoogleMap map, Place pickup) {

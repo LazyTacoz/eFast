@@ -81,4 +81,107 @@
     <string name="rate_your_driver">Rate your driver</string>
     <string name="action_pay">Pay %1$s via UPI</string>
     <string name="toast_payment_success">Payment successful</string>
+    <!-- Home: entry to the driver demo -->
+    <string name="action_driver_demo">Driver? Try Home Ride (demo)</string>
+
+    <!-- Driver: Home Ride -->
+    <string name="home_ride_title">Home Ride</string>
+    <string name="home_ride_subtitle">Heading home after your shift? Get only rides that take you closer to home.</string>
+    <string name="home_ride_your_home">Your home</string>
+    <string name="home_ride_home_not_set">Not set yet</string>
+    <string name="home_ride_home_area">%1$s area</string>
+    <string name="home_ride_changes_left">%1$d of %2$d home changes left this month</string>
+    <string name="home_ride_set_home">Set home</string>
+    <string name="home_ride_change_home">Change home</string>
+    <string name="home_ride_battery">Battery</string>
+    <string name="home_ride_battery_status">%1$d%% · %2$s range</string>
+    <string name="home_ride_demo_low_battery">Demo: low battery</string>
+    <string name="home_ride_window_label">How long can you look for a ride?</string>
+    <string name="home_ride_window_option">%1$d min</string>
+    <string name="home_ride_uses_left">%1$d of %2$d Home Rides left today</string>
+    <string name="home_ride_privacy_note">Your home address is stored encrypted on this phone. Riders never see it, and EFast staff only see the general area.</string>
+    <string name="home_ride_turn_on">Turn on Home Ride</string>
+    <string name="home_ride_need_home">Set your home first</string>
+    <string name="home_ride_no_uses_left">You\'ve used all %1$d Home Rides for today. Try again tomorrow.</string>
+
+    <!-- Driver: set home -->
+    <string name="home_address_title">Set your home</string>
+    <string name="home_address_subtitle">Pick your area, then add your street. Riders never see this.</string>
+    <string name="home_address_hint">Flat / building / street</string>
+    <string name="home_address_area_label">Area</string>
+    <string name="home_address_save">Save home</string>
+    <string name="home_address_error_line">Enter your street address</string>
+    <string name="home_address_error_area">Pick your area</string>
+    <string name="home_address_error_limit">You\'ve changed your home %1$d times this month. You can change it again next month.</string>
+    <string name="home_address_error_save">Couldn\'t save securely on this phone. Please try again.</string>
+    <string name="home_address_saved">Home saved</string>
+    <string name="home_address_first_save_free">Saving your home the first time doesn\'t count as a change.</string>
+
+    <!-- Driver: Home Ride active -->
+    <string name="home_ride_on_title">Home Ride is on</string>
+    <string name="home_ride_heading_to">Heading to %1$s area</string>
+    <string name="home_ride_time_left">%1$d min left</string>
+    <string name="home_ride_demo_clock">Demo: 1 second = 1 minute</string>
+    <string name="home_ride_looking">Looking for rides toward home…</string>
+    <string name="home_ride_no_more_requests">No more requests nearby right now. Keep heading home.</string>
+    <string name="home_ride_charge_needed">Not enough charge to get home safely. Charge at %1$s first: it adds only %2$s on your way.</string>
+    <string name="home_ride_charge_no_bay">Not enough charge to get home safely, and no free charging bay is in reach. Please call EFast support.</string>
+    <string name="home_ride_charge_done">Done charging (demo)</string>
+    <string name="home_ride_busy_zone">No match yet. %1$s (%2$s) is busy now and on your way home. Wait there for a ride.</string>
+    <string name="home_ride_offer_title">Ride toward home</string>
+    <string name="home_ride_offer_details">Drops you %1$s from home · pickup in %2$d min · %3$s</string>
+    <string name="home_ride_accept">Accept</string>
+    <string name="home_ride_skip">Skip</string>
+    <string name="home_ride_filtered_label">Filtered out for you</string>
+    <string name="home_ride_reason_direction">Doesn\'t take you closer to home</string>
+    <string name="home_ride_reason_detour">Too far out of your way (%1$s extra)</string>
+    <string name="home_ride_reason_rider_wait">Another driver can reach the rider sooner</string>
+    <string name="home_ride_reason_battery">Not enough charge to finish and get home</string>
+    <string name="home_ride_end">End Home Ride</string>
+    <string name="home_ride_accepted_title">Ride accepted (demo)</string>
+    <string name="home_ride_accepted_message">Pick up at %1$s in %2$d min. Home Ride ends after this drop-off.</string>
+    <string name="home_ride_expired_title">No ride toward home this time</string>
+    <string name="home_ride_expired_message">Your window ran out. Head home, there\'s no penalty.</string>
+    <string name="action_ok">OK</string>
+
+    <!-- CO2 saved -->
+    <string name="co2_fare_estimate">🌱 This ride saves about %1$s of CO₂ vs a petrol car</string>
+    <string name="co2_trip_saved">🌱 You saved %1$s of CO₂ on this ride</string>
+    <string name="co2_trip_total">Your total so far: %1$s saved over %2$s.</string>
+    <plurals name="rides_count">
+        <item quantity="one">%d ride</item>
+        <item quantity="other">%d rides</item>
+    </plurals>
+    <string name="co2_how_button">How is this worked out?</string>
+    <string name="co2_my_report_button">My monthly report</string>
+    <string name="co2_how_title">How we work out CO₂ saved</string>
+    <string name="co2_how_message">We compare your EFast electric ride with the same distance in a typical petrol car.\n\nEFast EV: %1$d Wh per km from the plug × %2$d g CO₂ per kWh (India grid average, CEA).\nPetrol car: %3$d g CO₂ per litre burned, at %4$s km per litre.\n\nPetrol refining and transport are left out, so the real saving is likely a little higher.</string>
+
+    <!-- Home: green impact entries -->
+    <string name="action_my_co2">🌱 My CO₂ savings</string>
+    <string name="action_company_report">Company emissions report (demo)</string>
+
+    <!-- Emissions report -->
+    <string name="report_title_personal">My CO₂ savings</string>
+    <string name="report_title_company">Emissions saved</string>
+    <string name="report_account_personal">Your EFast rides on this phone</string>
+    <string name="report_account_company">Company account: %1$s</string>
+    <string name="report_prev_month">Previous month</string>
+    <string name="report_next_month">Next month</string>
+    <string name="report_saved_label">CO₂ saved vs petrol cars</string>
+    <string name="report_total_detail">%1$s · %2$s</string>
+    <string name="report_baseline_detail">Petrol cars would have emitted %1$s; EFast emitted %2$s.</string>
+    <string name="report_by_rider">By employee</string>
+    <string name="report_row_detail">%1$s · %2$s</string>
+    <string name="report_empty_personal">No rides this month yet. Finish a ride and it shows up here.</string>
+    <string name="report_empty_company">No company rides this month.</string>
+    <string name="report_method">Method: EFast EV at %1$d Wh/km × %2$d g CO₂/kWh (India grid) vs a petrol car at %3$d g CO₂/L and %4$s km/L. Demo data.</string>
+    <string name="report_share_csv">Share report (CSV)</string>
+    <string name="report_share_subject">EFast emissions report, %1$s, %2$s</string>
+    <string name="report_share_error">Couldn\'t create the report file</string>
+
+    <!-- Fare Quote: launch offer -->
+    <string name="offer_standard_fare">%1$s Standard fare</string>
+    <string name="offer_label">%1$d%% off · Launch offer</string>
+    <string name="offer_note">Standard fare = %1$s + %2$s/km + 5%% GST. Launch offer ends %3$s.</string>
 </resources>

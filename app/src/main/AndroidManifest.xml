@@ -73,6 +73,40 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
+        <!-- Driver side (demo): Home Ride -->
+        <activity
+            android:name=".ui.DriverHomeRideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.DriverHomeAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.HomeRideActiveActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Green impact: personal and company emissions reports -->
+        <activity
+            android:name=".ui.EmissionsReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Lets the share sheet read the report CSV from the app's cache -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>
