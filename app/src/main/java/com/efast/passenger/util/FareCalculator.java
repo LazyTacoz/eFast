@@ -37,7 +37,7 @@ public final class FareCalculator {
         return String.format(Locale.ENGLISH, "%.1f km", meters / 1000.0);
     }
 
-    static long divideRoundHalfUp(long numerator, long denominator) {
+    public static long divideRoundHalfUp(long numerator, long denominator) {
         return (numerator + denominator / 2) / denominator;
     }
 }
