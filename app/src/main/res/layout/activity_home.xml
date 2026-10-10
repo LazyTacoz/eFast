@@ -124,6 +124,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
 
+            <!-- Green impact: rider's own monthly report, and the company (B2B) report demo -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myCo2Button"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_my_co2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/companyReportButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/action_company_report" />
+
             <!-- Demo only: the driver side lives in the same app until it gets its own -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/driverDemoButton"

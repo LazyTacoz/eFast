@@ -6,14 +6,19 @@ import android.os.Looper;
 import com.efast.passenger.data.model.ChargingBay;
 import com.efast.passenger.data.model.Driver;
 import com.efast.passenger.data.model.FareQuote;
+import com.efast.passenger.data.model.GreenTrip;
 import com.efast.passenger.data.model.Place;
 import com.efast.passenger.data.model.RideOffer;
 import com.efast.passenger.data.model.VehicleStatus;
 import com.efast.passenger.util.FareCalculator;
 
+import java.time.LocalDate;
+import java.time.YearMonth;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 /**
  * DEMO ONLY. Returns hardcoded data after a short delay so the screens show
@@ -176,6 +181,54 @@ public class FakeRideRepository implements RideRepository {
                 new RideOffer("r6", driverLocation, pimpri, 2, 5)
         );
         main.postDelayed(() -> callback.onSuccess(offers), NETWORK_DELAY_MS);
+    }
+
+    // ── Corporate account: emissions report demo data ─────────────
+
+    private static final String COMPANY_NAME = "Acme Technologies (demo)";
+
+    /** Each employee commutes between home and office; distances come from the same road estimate as fares. */
+    private static final String[][] EMPLOYEES = {
+            // name, home locality, office place
+            {"Priya Sharma", "viman_nagar", "hinjewadi"},
+            {"Amit Kulkarni", "kothrud", "hinjewadi"},
+            {"Sneha Patil", "kalyani_nagar", "magarpatta"},
+            {"Rohan Deshmukh", "baner", "shivajinagar"},
+            {"Neha Joshi", "aundh", "pune_airport"},
+            {"Karan Mehta", "hadapsar", "koregaon_park"},
+    };
+
+    @Override
+    public String getCompanyName() {
+        return COMPANY_NAME;
+    }
+
+    /**
+     * Made-up but repeatable: the same month always gives the same trips. Each employee
+     * rides on some working days (one or two legs), up to today for the current month.
+     */
+    @Override
+    public void getCompanyTrips(YearMonth month, Callback<List<GreenTrip>> callback) {
+        List<GreenTrip> trips = new ArrayList<>();
+        LocalDate today = LocalDate.now();
+        Random random = new Random(month.getYear() * 100L + month.getMonthValue());
+        for (String[] e : EMPLOYEES) {
+            long commute = roadDistanceMeters(place(e[1]), anyPlace(e[2]));
+            for (int day = 1; day <= month.lengthOfMonth(); day++) {
+                LocalDate date = month.atDay(day);
+                if (date.isAfter(today)) break;
+                int dow = date.getDayOfWeek().getValue();
+                if (dow >= 6 || random.nextInt(100) >= 55) continue;
+                int legs = random.nextInt(100) < 60 ? 2 : 1;
+                for (int i = 0; i < legs; i++) trips.add(new GreenTrip(e[0], date, commute));
+            }
+        }
+        main.postDelayed(() -> callback.onSuccess(trips), NETWORK_DELAY_MS);
+    }
+
+    private Place anyPlace(String id) {
+        Place p = getPlaceById(id);
+        return p != null ? p : place(id);
     }
 
     private Place place(String localityId) {

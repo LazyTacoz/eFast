@@ -2,6 +2,9 @@ package com.efast.passenger.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.StrikethroughSpan;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +18,10 @@ import com.efast.passenger.data.RideRepository;
 import com.efast.passenger.data.model.FareQuote;
 import com.efast.passenger.data.model.Place;
 import com.efast.passenger.databinding.ActivityFareQuoteBinding;
+import com.efast.passenger.green.Co2Calculator;
+import com.efast.passenger.green.EmissionFactors;
+import com.efast.passenger.pricing.LaunchOffer;
+import com.efast.passenger.pricing.LaunchOfferRules;
 import com.efast.passenger.util.EdgeToEdgeHelper;
 import com.efast.passenger.util.FareCalculator;
 import com.efast.passenger.util.MapRouteHelper;
@@ -22,7 +29,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 
 public class FareQuoteActivity extends AppCompatActivity {
 
@@ -36,6 +46,8 @@ public class FareQuoteActivity extends AppCompatActivity {
     public static final String EXTRA_TOTAL_PAISE = "extra_total_paise";
 
     private final RideRepository repo = AppGraph.rideRepository();
+    private final Co2Calculator co2 = new Co2Calculator(EmissionFactors.indiaDefaults());
+    private final LaunchOfferRules offerRules = LaunchOfferRules.defaults();
     private ActivityFareQuoteBinding binding;
     private Place pickup;
     private Place drop;
@@ -116,5 +128,30 @@ public class FareQuoteActivity extends AppCompatActivity {
         binding.baseFareValue.setText(FareCalculator.rupees(q.baseFarePaise));
         binding.gstValue.setText(FareCalculator.rupees(q.gstPaise));
         binding.totalValue.setText(FareCalculator.rupees(q.totalPaise));
+
+        binding.co2Label.setText(getString(R.string.co2_fare_estimate,
+                Co2Calculator.kg(co2.savedGrams(q.distanceMeters))));
+        binding.co2Label.setVisibility(View.VISIBLE);
+
+        showLaunchOffer(LaunchOffer.evaluate(q, offerRules, LocalDate.now()));
+    }
+
+    /** Standard fare crossed out, EFast's real fare big below it. Hidden when the rules say no. */
+    private void showLaunchOffer(LaunchOffer offer) {
+        if (!offer.show) {
+            binding.offerBlock.setVisibility(View.GONE);
+            return;
+        }
+        String standard = FareCalculator.rupees(offer.standardTotalPaise);
+        SpannableString struck = new SpannableString(getString(R.string.offer_standard_fare, standard));
+        struck.setSpan(new StrikethroughSpan(), 0, standard.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        binding.standardFareText.setText(struck);
+        binding.offerPriceText.setText(FareCalculator.rupees(offer.actualTotalPaise));
+        binding.offerLabelText.setText(getString(R.string.offer_label, offer.percentOff));
+        binding.offerNoteText.setText(getString(R.string.offer_note,
+                FareCalculator.rupees(offerRules.standardBasePaise),
+                FareCalculator.rupees(offerRules.standardRatePaisePerKm),
+                offerRules.lastDay.format(DateTimeFormatter.ofPattern("d MMM yyyy", Locale.ENGLISH))));
+        binding.offerBlock.setVisibility(View.VISIBLE);
     }
 }

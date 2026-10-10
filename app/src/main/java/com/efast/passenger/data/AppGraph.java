@@ -11,6 +11,7 @@ public final class AppGraph {
     private static RideRepository rideRepository;
     private static HomeAddressStore homeAddressStore;
     private static HomeRideUsageStore homeRideUsageStore;
+    private static GreenRideStore greenRideStore;
 
     private AppGraph() {
     }
@@ -34,5 +35,12 @@ public final class AppGraph {
             homeRideUsageStore = new HomeRideUsageStore(context);
         }
         return homeRideUsageStore;
+    }
+
+    public static synchronized GreenRideStore greenRideStore(Context context) {
+        if (greenRideStore == null) {
+            greenRideStore = new GreenRideStore(context);
+        }
+        return greenRideStore;
     }
 }

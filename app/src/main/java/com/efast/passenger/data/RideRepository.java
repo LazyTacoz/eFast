@@ -3,10 +3,12 @@ package com.efast.passenger.data;
 import com.efast.passenger.data.model.ChargingBay;
 import com.efast.passenger.data.model.Driver;
 import com.efast.passenger.data.model.FareQuote;
+import com.efast.passenger.data.model.GreenTrip;
 import com.efast.passenger.data.model.Place;
 import com.efast.passenger.data.model.RideOffer;
 import com.efast.passenger.data.model.VehicleStatus;
 
+import java.time.YearMonth;
 import java.util.List;
 
 /**
@@ -45,4 +47,12 @@ public interface RideRepository {
 
     /** Ride requests near the driver, in the order they come in. Home Ride filters them on the phone. */
     void getNearbyRideRequests(Place driverLocation, Callback<List<RideOffer>> callback);
+
+    // ── Corporate account: emissions report (demo) ─────────────────
+
+    /** The company the signed-in rider books for. Demo: one fixed company. */
+    String getCompanyName();
+
+    /** Every ride the company's employees took in {@code month}. */
+    void getCompanyTrips(YearMonth month, Callback<List<GreenTrip>> callback);
 }
