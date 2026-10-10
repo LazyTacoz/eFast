@@ -8,6 +8,12 @@
     <color name="efast_muted">#5E6B66</color>
     <color name="efast_surface">#F4F7F5</color>
     <color name="efast_outline">#D5DEDA</color>
+    <!-- Always white, even in dark mode: text and icons on green (splash, buttons). -->
+    <color name="efast_on_green">#FFFFFFFF</color>
+    <!-- Background of the SOS button. -->
+    <color name="efast_sos_bg">#FFE0E0</color>
     <color name="black">#FF000000</color>
+    <!-- Used as the card background in layouts, so dark mode turns it dark
+         (see values-night/colors.xml). For text on green use efast_on_green. -->
     <color name="white">#FFFFFFFF</color>
 </resources>
