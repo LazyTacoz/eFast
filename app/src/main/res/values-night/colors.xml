@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode versions of the colours in values/colors.xml.
+         Android uses these automatically when the phone is in dark mode. -->
+    <color name="efast_green">#00B074</color>
+    <color name="efast_green_dark">#4FD6A0</color>
+    <color name="efast_green_light">#143A2C</color>
+    <color name="efast_ink">#E6EEEA</color>
+    <color name="efast_muted">#9AA8A2</color>
+    <color name="efast_surface">#0E1513</color>
+    <color name="efast_outline">#2C3934</color>
+    <color name="efast_sos_bg">#4A2222</color>
+    <!-- Card background in dark mode. -->
+    <color name="white">#FF18211E</color>
+</resources>
